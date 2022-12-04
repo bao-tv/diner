@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #ff6600;
+    --secondary-color: #ffc600;
+    --font-color: rgba(22, 28, 45, 0.7);
+    --bg-color: #fff;
+    --heading-color: #232121;
+    --border-radius: 6px;
+    --border-radius-full: 35px;
+    --border-color: transparent;
+    --border-color-light: #eee;
+    --nav-color: #232121;
+    --dropdown-color: #fff;
+    --iframe-filter: grayscale(0%);
+    --bg-light: rgba(130, 115, 252, .05);
+    --bg-grey: #f7f7f7;
+    --footer-bg: #000;
+    --card-bg: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.title-header {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+
+.title-info {
+    font-size: 38px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--font-color);
+}
+
+.container-fluid, .col-6 {
+    padding: 0;
+}
