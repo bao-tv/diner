@@ -66,3 +66,23 @@ p {
 .container-fluid, .col-6 {
     padding: 0;
 }
+
+.btn {
+    padding: 12px 45px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+    border-radius: var(--border-radius);
+}
+
+.btn-white {
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
