@@ -26,6 +26,8 @@
 
 html, body {
     font-family: 'Quicksand', sans-serif;
+    background: var(--bg-color);
+    color: var(--font-color);
 }
 
 html {
