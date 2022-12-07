@@ -35,6 +35,7 @@
     border-radius: var(--border-radius);
     position: relative;
     border: 1px solid var(--bg-color);
+    padding: 10px 50px 10px 20px;
 }
 
 .banner__content .banner__search .search__icon{
@@ -42,6 +43,9 @@
     right: 20px;
     cursor: pointer;
     color: initial;
+    font-size: 15px;
+    top: 15px;
+    color: var(--font-color);
 }
 
 .banner__content i:nth-child(2) {
@@ -320,6 +324,17 @@
     z-index: 1;
 }
 
+.Deliciousness::after {
+    content: "";
+    background: rgb(16 15 19 / 66%);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
 .Deliciousness-top {
     max-width: 700px;
 }
@@ -342,3 +357,83 @@
     background-color: var(--primary-color);
     border: 2px solid var(--primary-color);
 }
+
+
+.number {
+    position: relative;
+    margin-top: -70px;
+    z-index: 9;
+}
+
+/* count */
+.counter {
+    background-color: var(--bg-color);
+    box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+    padding: 40px 20px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: .3s ease;
+}
+
+.counter i {
+    background: var(--primary-color);
+    font-size: 26px;
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    line-height: 68px;
+    color: #fff;
+    text-align: center;
+}
+
+.counter__number {
+    font-size: 2.6em;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.counter__text {
+    text-transform: capitalize;
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+/* video */
+
+.video__info {
+    background: url(../img/banner3.jpeg) no-repeat center;
+    background-size: cover;
+    z-index: 1;
+    align-items: center;
+    min-height: 500px;
+    border-radius: var(--border-radius);
+    position: relative;
+    display: grid;
+}
+
+.video__info::after {
+    content: "";
+    background: rgb(16 15 19 / 60%);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: var(--border-radius);
+}
+
+.play-view i {
+    width: 80px;
+    height: 80px;
+    font-size: 26px;
+    padding-left: 2px;
+    text-align: center;
+    line-height: 76px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    color: var(--primary-color);
+    border: transparent;
+    background: var(--bg-color);
+}
+
