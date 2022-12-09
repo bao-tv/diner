@@ -55,8 +55,9 @@ body {
 
 .title-info {
     font-size: 38px;
-    line-height: 40px;
+    line-height: 48px;
     font-weight: 600;
+    color: var(--heading-color);
 }
 
 p {
@@ -78,6 +79,8 @@ p {
     border-radius: var(--border-radius);
 }
 
+
+
 .btn-white {
     color: #fff;
     border: 2px solid #fff;
@@ -88,3 +91,17 @@ p {
     background-color: var(--primary-color);
     border: 2px solid var(--primary-color);
 }
+
+.container {
+    max-width: 1200px;
+}
+
+@keyframes zoomout {
+    0% {
+      box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
+    }
+  }
