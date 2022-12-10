@@ -97,11 +97,20 @@ button#myBtnMenu {
 
 .banner_menu_overlay {
     visibility: visible;
-    display:none;
-    transition: transform 0.4s, opacity 0.4s;
+    /* display:none; */
+    opacity: 0;
+    z-index: -9;
+    /* transition: all 0.5; */
+    /* transition: .8s; */
+    transition: all .5s;
 }
 
-.banner .show {display:block;}
+.banner .banner_menu_overlay.show {
+    /* display:block; */
+    opacity: 1;
+    z-index: 10;
+    transition: opacity .5s;
+}
 
 .overlay {
     position: fixed;
@@ -122,6 +131,7 @@ button#myBtnMenu {
     background-color: var(--primary-color);
     border-radius: var(--border-radius);
     border: none;
+    /* transition: opacity .5s; */
 }
 
 .overlay ul {
@@ -142,6 +152,7 @@ button#myBtnMenu {
 
 .overlay ul li:hover a{
     color: var(--primary-color);
+    text-decoration: none;
 }
 
 .overlay ul li a {

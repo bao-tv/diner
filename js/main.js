@@ -17,11 +17,17 @@ $('.carousel-item').carousel()
 
 // myBtnMenu
 // Get the button, and when the user clicks on it, execute myFunction
-document.getElementById("myBtnMenu").onclick = function() {myFunction()};
+document.getElementById("myBtnMenu").onclick = function() {myAddShow()};
 
 /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-function myFunction() {
-    document.getElementById("bannerMenu").classList.toggle("show");
+function myAddShow() {
+    document.getElementById("bannerMenu").classList.add("show");
+}
+
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("bannerMenuClose").onclick = function() {myCloseShow()};
+function myCloseShow() {
+  document.getElementById("bannerMenu").classList.remove("show");
 }
 
 // Close the dropdown if the user clicks outside of it
