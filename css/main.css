@@ -53,10 +53,21 @@
     margin-right: 24px;
 }
 
-.banner__content .banner__menu {
+.banner__content .banner__menu #myBtnMenu {
     font-size: 30px;
-    cursor: pointer;
 }
+
+button#myBtnMenu {
+    outline: none;
+    border: none;
+    background: none;
+    text-align: center;
+    color: #fbfdfb;
+    font-size: 1.95em;
+    padding: 0 8px;
+}
+
+
 
 .banner__info {
     max-width: 600px;
@@ -86,10 +97,11 @@
 
 .banner_menu_overlay {
     visibility: visible;
-    opacity: 0;
-    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+    display:none;
     transition: transform 0.4s, opacity 0.4s;
 }
+
+.banner .show {display:block;}
 
 .overlay {
     position: fixed;
@@ -98,7 +110,6 @@
     top: 0;
     left: 0;
     background: rgb(6 3 0 / 77%);
-    z-index: -9;
 }
 
 .overlay__close {
