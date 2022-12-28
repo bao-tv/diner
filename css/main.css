@@ -1,3 +1,32 @@
+/* Dark mode */
+#switchButton .fa-sun {
+    display: none;
+}
+#switchButton .fa-moon {
+    display: block;
+}
+#switchButton {
+    background: none;
+    border: none;
+    font-size: 1.85em;
+    color: white;
+}
+
+.dark #switchButton .fa-sun {
+    display: block;
+}
+.dark #switchButton .fa-moon {
+    display: none;
+}
+.dark .darktheme {
+    background-color: #232220;
+}
+.dark .contrast {
+    color: white;
+}
+
+
+
 .banner {
     background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(../img/banner.jpeg);
     min-height: 700px;
@@ -39,6 +68,9 @@
     border: 1px solid var(--bg-color);
     padding: 10px 50px 10px 20px;
 }
+.banner__content .banner__search form input {
+    border: none;
+}
 
 .banner__content .banner__search .search__icon{
     position: absolute;
@@ -50,10 +82,10 @@
     color: var(--font-color);
 }
 
-.banner__content i:nth-child(2) {
+/* .banner__content i:nth-child(2) {
     font-size: 24px;
     margin-right: 24px;
-}
+} */
 
 .banner__content .banner__menu #myBtnMenu {
     font-size: 30px;
@@ -483,6 +515,64 @@ button#myBtnMenu {
     color: #fff;
 }
 
+#small-dialog {
+    max-width: 750px;
+    margin: 40px auto;
+    position: relative;
+  }
+  div#small-dialog iframe {
+    width: 100%;
+    height: 420px;
+    display: block;
+    border-radius: 10px;
+  }
+  .mfp-close-btn-in .mfp-close {
+    color: #fff;
+  }
+  .mfp-close,
+  .mfp-close:active {
+    top: -40px;
+  }
+  
+  /**
+     * Fade-zoom animation for first dialog
+     */
+  /* start state */
+  .my-mfp-zoom-in .zoom-anim-dialog {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.8);
+  }
+  
+  /* animate in */
+  .my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* animate out */
+  .my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  
+  /* Dark overlay, start state */
+  .my-mfp-zoom-in.mfp-bg {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+  
+  /* animate in */
+  .my-mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.95;
+  }
+  
+  /* animate out */
+  .my-mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0;
+  }
+  
+
 /* blogs */
 .blogs {
     background: var(--bg-grey);
@@ -493,6 +583,8 @@ button#myBtnMenu {
     word-wrap: break-word;
     border: none;
     border-radius: 4px;
+    border: 1px solid var(--border-color-light);
+    padding: 15px;
 }
 
 .blogs__item-header {
@@ -735,8 +827,8 @@ footer p {
     border: 1px solid transparent;
     outline: none;
     width: 100%;
-    color: var(--font-color);
-    background: var(--bg-color);
+    /* color: var(--font-color); */
+    /* background: var(--bg-color); */
     border-radius: var(--border-radius);
 }
 
@@ -764,11 +856,10 @@ footer p {
     color: var(--primary-color);
     text-decoration: none;
 }
-
 .backToTop {
     display: block;
     position: fixed;
-    bottom: 55px;
+    bottom: 35px;
     right: 20px;
     z-index: 99;
     border: none;
@@ -788,6 +879,71 @@ footer p {
     font-size: 18px;
     line-height: 50px;
 }
+
+.sidebar {
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    background: #0D1326;
+    z-index: 99999;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+}
+.pull-right div, .sidebar__btn a {
+    text-decoration: none;
+    color: #e6ebffb0;
+    cursor: pointer;
+}
+
+
+.sidebar__btn p {
+    color: #e6ebffb0;
+    font-size: 14px;
+
+}
+.pull-right {
+    padding: 0 10px;
+}
+
+.pull-right i {
+    transform: rotate(180deg);
+}
+
+.sidebar__btn {
+    /* display: none; */
+    opacity: 0;
+    height: 0;
+    padding: 0px 10px;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.sidebar.active .sidebar__btn{
+    /* display: block; */
+    opacity: 1;
+    height: 210px;
+    transition: all 1s;
+
+}
+
+.sidebar.active .pull-right i {
+    transform: unset;
+    
+}
+.sidebar.active .pull-right div {
+    border-bottom: 1px solid #e6ebffb0;
+}
+
+.js-cd-top {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cd-top--is-visible { 
+    opacity: 1;
+    visibility: visible;
+  }
+
 
 @media only screen and (max-width: 1280px) {
     .container {
@@ -855,7 +1011,6 @@ footer p {
 @media only screen and (max-width: 800px) {
     .banner {
         min-height: 600px;
-        margin-top: 60px;
     }
     
     .banner__info h3 {

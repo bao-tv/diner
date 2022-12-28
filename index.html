@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-      <title>Title</title>
+      <title>Diner</title>
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,11 +29,14 @@
       <!-- animation css -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+      <!-- Magnigic Popup -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+      
       <!-- my style -->
       <link rel="stylesheet" href="./css/base.css">
       <link rel="stylesheet" href="./css/main.css">
   </head>
-  <body>
+  <body id="myBody">
     <!-- navbar-light -->
     <!-- banner -->
     <section class="banner">
@@ -42,16 +45,19 @@
           <a href="./index.html" class="navbar__brand">Diner</a>
           <div class="banner__content">
             <div class="banner__search">
-              <form class="form-inline position-relative">
-                <input class="form-control" type="search" placeholder="Search here.." aria-label="Search">
+              <form class="form-inline position-relative  ">
+                <input class="form-control darktheme " type="search" placeholder="Search here.." aria-label="Search">
                 <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
                 <div class="search__icon">
-                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-magnifying-glass contrast"></i>
                 </div>
               </form>
             </div>
             <!-- <a href=""></a> -->
-            <i class="fa-regular fa-moon"></i>
+            <button class="btndark" id="switchButton" title="Click to switch theme">
+              <i class="fa-regular fa-moon mr-2"></i>
+              <i class="fa-regular fa-sun mr-2"></i>
+            </button>
             <div class="banner__menu">
               <button id="myBtnMenu" type="button">
                 <i class="fa-solid fa-bars"></i>
@@ -69,7 +75,7 @@
           </a>
         </div>
 
-        <div id="bannerMenu" class="banner_menu_overlay overlay">
+        <div id="bannerMenu" class="banner_menu_overlay overlay d-none">
           <button id="bannerMenuClose" class="overlay__close">
             <i class="fa-solid fa-xmark"></i>
           </button>
@@ -108,20 +114,20 @@
 
     <!-- about -->
 
-    <section class="about py-5">
+    <section class="about py-5 darktheme">
       <div class="container py-5">
         <div class="row">
           <div class="about-left col-lg-5">
             <div class="title">
               <h6 class="title-header">About Us</h6>
-              <h3 class="title-info mb-4">We found our creative space that is open for you.</h3>
+              <h3 class="title-info mb-4 contrast">We found our creative space that is open for you.</h3>
             </div>
           </div>
   
           <div class="about-right col-lg-7 pl-lg-5">
-            <div class="container-content mt-3">
-              <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor sit.</p>
-              <p class="mt-3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.</p>
+            <div class="container-content mt-3 ">
+              <p class="contrast">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor sit.</p>
+              <p class="mt-3 contrast">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
         </div>
@@ -175,15 +181,15 @@
 
     <!-- Categories -->
 
-    <section class="Categories py-5">
+    <section class="Categories py-5 darktheme">
       <div class="container py-5">
         <div class="title text-center">
           <h6 class="title-header">What's New</h6>
-          <h3 class="title-info mb-4">Popular Categories</h3>
+          <h3 class="title-info mb-4 contrast">Popular Categories</h3>
         </div>
         <div class="Categories-content row">
           <div class="col-lg-4 col-6 mt-lg-0 mt-4">
-            <div class="Categories-content__item">
+            <div class="Categories-content__item overflow-hidden">
               <a href="" class="Categories-content__img ">
                 <img src="./img/g1.jpeg" alt="" class="img-fluid">
               </a>
@@ -197,7 +203,7 @@
           </div>
 
           <div class="col-lg-4 col-6 mt-lg-0 mt-4">
-            <div class="Categories-content__item">
+            <div class="Categories-content__item overflow-hidden">
               <a href="" class="Categories-content__img ">
                 <img src="./img/g1.jpeg" alt="" class="img-fluid">
               </a>
@@ -210,7 +216,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-6 mt-lg-0 mt-4">
-            <div class="Categories-content__item">
+            <div class="Categories-content__item overflow-hidden">
               <a href="" class="Categories-content__img ">
                 <img src="./img/g1.jpeg" alt="" class="img-fluid">
               </a>
@@ -224,7 +230,7 @@
           </div>
 
           <div class="col-lg-4 col-6 mt-4">
-            <div class="Categories-content__item">
+            <div class="Categories-content__item overflow-hidden">
               <a href="" class="Categories-content__img ">
                 <img src="./img/g1.jpeg" alt="" class="img-fluid">
               </a>
@@ -238,7 +244,7 @@
           </div>
 
           <div class="col-lg-4 col-6 mt-4">
-            <div class="Categories-content__item">
+            <div class="Categories-content__item overflow-hidden">
               <a href="" class="Categories-content__img ">
                 <img src="./img/g1.jpeg" alt="" class="img-fluid">
               </a>
@@ -251,7 +257,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-6 mt-4">
-            <div class="Categories-content__item">
+            <div class="Categories-content__item overflow-hidden">
               <a href="" class="Categories-content__img ">
                 <img src="./img/g1.jpeg" alt="" class="img-fluid">
               </a>
@@ -269,94 +275,94 @@
     </section>
 
     <!-- services -->
-    <section class="services py-5">
+    <section class="services py-5 darktheme">
       <div class="container py-5">
         <div class="row">
-          <div class="col-lg-4 col-6">
-            <div class="services__item">
+          <div class="col-lg-4 col-12">
+            <div class="services__item darktheme">
               <div class="services__item-header">
                 <div class="services__icon mr-4">
                   <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="services__info">
-                  <p>01</p>
+                  <p class="contrast">01</p>
                   <h4>
-                    <a href="">Soup</a>
+                    <a href="" class="contrast">Soup</a>
                   </h4>
                 </div>
               </div>
-            <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            <p class="mt-3 contrast">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-6">
-            <div class="services__item">
+          <div class="col-lg-4 col-12">
+            <div class="services__item darktheme">
               <div class="services__item-header">
                 <div class="services__icon mr-4">
                   <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="services__info">
-                  <p>01</p>
-                  <h4><a href="">Soup</a></h4>
+                  <p class="contrast">01</p>
+                  <h4><a href="" class="contrast">Soup</a></h4>
                 </div>
               </div>
-            <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            <p class="mt-3 contrast">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-6 mt-lg-0 mt-4">
-            <div class="services__item">
+          <div class="col-lg-4 col-12 mt-lg-0 mt-4">
+            <div class="services__item darktheme">
               <div class="services__item-header">
                 <div class="services__icon mr-4">
                   <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="services__info">
-                  <p>01</p>
-                  <h4><a href="">Soup</a></h4>
+                  <p class="contrast">01</p>
+                  <h4><a href="" class="contrast">Soup</a></h4>
                 </div>
               </div>
-            <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            <p class="mt-3 contrast">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-6 mt-4">
-            <div class="services__item">
+          <div class="col-lg-4 col-12 mt-4">
+            <div class="services__item darktheme">
               <div class="services__item-header">
                 <div class="services__icon mr-4">
                   <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="services__info">
-                  <p>01</p>
-                  <h4><a href="">Soup</a></h4>
+                  <p class="contrast">01</p>
+                  <h4><a href="" class="contrast">Soup</a></h4>
                 </div>
               </div>
-            <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            <p class="mt-3 contrast">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-6 mt-4">
-            <div class="services__item">
+          <div class="col-lg-4 col-12 mt-4">
+            <div class="services__item darktheme">
               <div class="services__item-header">
                 <div class="services__icon mr-4">
                   <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="services__info">
-                  <p>01</p>
-                  <h4><a href="">Soup</a></h4>
+                  <p class="contrast">01</p>
+                  <h4><a href="" class="contrast">Soup</a></h4>
                 </div>
               </div>
-            <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            <p class="mt-3 contrast">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
             </div>
           </div>
-          <div class="col-lg-4 col-6 mt-4">
-            <div class="services__item">
+          <div class="col-lg-4 col-12 mt-4">
+            <div class="services__item darktheme">
               <div class="services__item-header">
                 <div class="services__icon mr-4">
                   <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="services__info">
-                  <p>01</p>
-                  <h4><a href="">Soup</a></h4>
+                  <p class="contrast">01</p>
+                  <h4><a href="" class="contrast">Soup</a></h4>
                 </div>
               </div>
-            <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            <p class="mt-3 contrast">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
             </div>
           </div>
         </div>
@@ -364,7 +370,7 @@
     </section>
 
     <!-- Deliciousness -->
-    <section class="Deliciousness py-5">
+    <section class="Deliciousness py-5 darktheme">
      <div class="container pt-lg-2 pb-lg-4 py-4">
       <div class="Deliciousness-top text-center py-5 m-auto">
         <h3>Deliciousness jumping into the mouth.</h3>
@@ -382,35 +388,35 @@
       
      </div>
     </section>
-    <section class="number py-lg-0 py-5">
+    <section class="number py-lg-0 py-5 darktheme">
       <div class="container">
         <div class="row">
-          <div class="col-3">
-            <div class="counter">
+          <div class="col-12 col-md-3">
+            <div class="counter darktheme">
               <i class="fa-regular fa-building"></i>
-              <div class="counter__number mt-3" data-counter-time="2000" data-counter-delay="10">15,100</div>
-              <p class="counter__text">Branches</p>
+              <div class="counter__number mt-3 contrast" data-counter-time="2000" data-counter-delay="10">15,100</div>
+              <p class="counter__text contrast">Branches</p>
             </div>
           </div>
-          <div class="col-3">
-            <div class="counter">
+          <div class="col-12 col-md-3">
+            <div class="counter darktheme">
               <i class="fa-regular fa-building"></i>
-              <div class="counter__number mt-3" data-counter-time="2000" data-counter-delay="10">15,100</div>
-              <p class="counter__text">Branches</p>
+              <div class="counter__number mt-3 contrast" data-counter-time="2000" data-counter-delay="10">15,100</div>
+              <p class="counter__text contrast">Branches</p>
             </div>
           </div>
-          <div class="col-3">
-            <div class="counter">
+          <div class="col-12 col-md-3">
+            <div class="counter darktheme">
               <i class="fa-regular fa-building"></i>
-              <div class="counter__number mt-3" data-counter-time="2000" data-counter-delay="10">15,100</div>
-              <p class="counter__text">Branches</p>
+              <div class="counter__number mt-3 contrast" data-counter-time="2000" data-counter-delay="10">15,100</div>
+              <p class="counter__text contrast">Branches</p>
             </div>
           </div>
-          <div class="col-3">
-            <div class="counter">
+          <div class="col-12 col-md-3">
+            <div class="counter darktheme">
               <i class="fa-regular fa-building"></i>
-              <div class="counter__number mt-3" data-counter-time="2000" data-counter-delay="10">15,100</div>
-              <p class="counter__text">Happy Customers</p>
+              <div class="counter__number mt-3 contrast" data-counter-time="2000" data-counter-delay="10">15,100</div>
+              <p class="counter__text contrast">Happy Customers</p>
             </div>
           </div>
         </div>
@@ -418,27 +424,32 @@
     </section>
 
     <!-- video -->
-    <section class="video">
+    <section class="video darktheme">
       <div class="container py-5">
         <div class="video__info text-center">
           <div class="play-view">
-            <i class="fa-solid fa-play"></i>
+            <a href="#small-dialog" id="popup-video">
+              <i class="fa-solid fa-play"></i>
+            </a>
+            <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+              <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- blogs -->
-    <section class="blogs py-5">
+    <section class="blogs py-5 darktheme">
       <div class="container py-5">
         <div class="blogs__header">
           <div class="title text-center">
             <h6 class="title-header">Latest Posts</h6>
-            <h3 class="title-info mb-4">Blog Posts</h3>
+            <h3 class="title-info mb-4 contrast">Blog Posts</h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-6 mt-5">
+          <div class="col-12 col-lg-4 mt-5 ">
             <div class="blogs__item">
               <div class="blogs__item-header">
                 <a href="">
@@ -453,19 +464,19 @@
                 </div>
               </div>
               <div class="blogs_item-content">
-                <h3>The Best Cookie Recipes To Bake This Weekend
+                <h3 class="contrast">The Best Cookie Recipes To Bake This Weekend
                 </h3>
-                <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                <p class="contrast">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
                   vitae sit.</p>
                 <div class="blogs__item-footer mt-3">
                   <div class="blogs__item-footer-left">
                     <a href="" class="blogs__item-footer-img">
                       <img src="./img/team1.jpeg" alt="">
                     </a>
-                    <p>Rashed Kabir</p>
+                    <p class="contrast">Rashed Kabir</p>
                   </div>
 
-                  <a class="blogs__item-footer-right" href="#">
+                  <a class="blogs__item-footer-right contrast" href="#">
                     Read More
                     <i class="fa-solid fa-chevron-right"></i>
                   </a>
@@ -473,7 +484,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-6 mt-5">
+          <div class="col-12 col-lg-4 mt-5">
             <div class="blogs__item">
               <div class="blogs__item-header">
                 <a href="">
@@ -488,19 +499,19 @@
                 </div>
               </div>
               <div class="blogs_item-content">
-                <h3>The Best Cookie Recipes To Bake This Weekend
+                <h3 class="contrast">The Best Cookie Recipes To Bake This Weekend
                 </h3>
-                <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                <p class="contrast">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
                   vitae sit.</p>
                 <div class="blogs__item-footer mt-3">
                   <div class="blogs__item-footer-left">
                     <a href="" class="blogs__item-footer-img">
                       <img src="./img/team1.jpeg" alt="">
                     </a>
-                    <p>Rashed Kabir</p>
+                    <p class="contrast">Rashed Kabir</p>
                   </div>
 
-                  <a class="blogs__item-footer-right" href="#">
+                  <a class="blogs__item-footer-right contrast" href="#">
                     Read More
                     <i class="fa-solid fa-chevron-right"></i>
                   </a>
@@ -508,7 +519,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-6 mt-5">
+          <div class="col-12 col-lg-4 mt-5">
             <div class="blogs__item">
               <div class="blogs__item-header">
                 <a href="">
@@ -523,19 +534,19 @@
                 </div>
               </div>
               <div class="blogs_item-content">
-                <h3>The Best Cookie Recipes To Bake This Weekend
+                <h3 class="contrast">The Best Cookie Recipes To Bake This Weekend
                 </h3>
-                <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                <p class="contrast">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
                   vitae sit.</p>
                 <div class="blogs__item-footer mt-3">
                   <div class="blogs__item-footer-left">
                     <a href="" class="blogs__item-footer-img">
                       <img src="./img/team1.jpeg" alt="">
                     </a>
-                    <p>Rashed Kabir</p>
+                    <p class="contrast">Rashed Kabir</p>
                   </div>
 
-                  <a class="blogs__item-footer-right" href="#">
+                  <a class="blogs__item-footer-right contrast" href="#">
                     Read More
                     <i class="fa-solid fa-chevron-right"></i>
                   </a>
@@ -549,12 +560,12 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="Testimonials py-5">
+    <section class="Testimonials py-5 darktheme">
       <div class="container py-5">
         <div class="Testimonials__header">
           <div class="title text-center">
             <h6 class="title-header">Testimonials</h6>
-            <h3 class="title-info mb-5">What People Say</h3>
+            <h3 class="title-info mb-5 contrast">What People Say</h3>
           </div>
           
         </div>
@@ -567,17 +578,17 @@
                 <a href="" class="Testimonials-slide__img">
                   <img src="./img/team1.jpeg" class="d-block w-100" alt="">
                 </a>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption  d-md-block">
                   <i class="fa-solid fa-quote-left icon py-3"></i>
-                  <p class="Testimonials-slide-header">OMG! I cannot believe. It's Awesome <i class="fa-solid fa-quote-right"></i></p>
-                  <p>My new site is so much faster and easier to work with than my old site. They are here to
+                  <p class="Testimonials-slide-header contrast">OMG! I cannot believe. It's Awesome <i class="fa-solid fa-quote-right"></i></p>
+                  <p class="contrast">My new site is so much faster and easier to work with than my old site. They are here to
                     help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
                     Pellen tesque libero ut justo, ultrices in ligula.
                   </p>
                   <div class="text-center mt-4">
                     <div class="people-info align-self">
-                      <h3>Johnson william</h3>
-                      <p class="indentity text-center">Customer</p>
+                      <h3 class="contrast">Johnson william</h3>
+                      <p class="indentity text-center contrast">Customer</p>
                     </div>
                   </div>
                 </div>
@@ -587,38 +598,17 @@
                 <a href="" class="Testimonials-slide__img">
                   <img src="./img/team1.jpeg" class="d-block w-100" alt="">
                 </a>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption  d-md-block">
                   <i class="fa-solid fa-quote-left icon py-3"></i>
-                  <p class="Testimonials-slide-header">OMG! I cannot believe. It's Awesome <i class="fa-solid fa-quote-right"></i></p>
-                  <p>My new site is so much faster and easier to work with than my old site. They are here to
+                  <p class="Testimonials-slide-header contrast">OMG! I cannot believe. It's Awesome <i class="fa-solid fa-quote-right"></i></p>
+                  <p class="contrast">My new site is so much faster and easier to work with than my old site. They are here to
                     help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
                     Pellen tesque libero ut justo, ultrices in ligula.
                   </p>
                   <div class="text-center mt-4">
                     <div class="people-info align-self">
-                      <h3>Johnson william</h3>
-                      <p class="indentity text-center">Customer</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-
-              <div class="carousel-item text-center">
-                <a href="" class="Testimonials-slide__img">
-                  <img src="./img/team1.jpeg" class="d-block w-100" alt="">
-                </a>
-                <div class="carousel-caption d-none d-md-block">
-                  <i class="fa-solid fa-quote-left icon py-3"></i>
-                  <p class="Testimonials-slide-header">OMG! I cannot believe. It's Awesome <i class="fa-solid fa-quote-right"></i></p>
-                  <p>My new site is so much faster and easier to work with than my old site. They are here to
-                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
-                    Pellen tesque libero ut justo, ultrices in ligula.
-                  </p>
-                  <div class="text-center mt-4">
-                    <div class="people-info align-self">
-                      <h3>Johnson william</h3>
-                      <p class="indentity text-center">Customer</p>
+                      <h3 class="contrast">Johnson william</h3>
+                      <p class="indentity text-center contrast">Customer</p>
                     </div>
                   </div>
                 </div>
@@ -629,17 +619,38 @@
                 <a href="" class="Testimonials-slide__img">
                   <img src="./img/team1.jpeg" class="d-block w-100" alt="">
                 </a>
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption  d-md-block">
                   <i class="fa-solid fa-quote-left icon py-3"></i>
-                  <p class="Testimonials-slide-header">OMG! I cannot believe. It's Awesome <i class="fa-solid fa-quote-right"></i></p>
-                  <p>My new site is so much faster and easier to work with than my old site. They are here to
+                  <p class="Testimonials-slide-header contrast">OMG! I cannot believe. It's Awesome <i class="fa-solid fa-quote-right"></i></p>
+                  <p class="contrast">My new site is so much faster and easier to work with than my old site. They are here to
                     help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
                     Pellen tesque libero ut justo, ultrices in ligula.
                   </p>
                   <div class="text-center mt-4">
                     <div class="people-info align-self">
-                      <h3>Johnson william</h3>
-                      <p class="indentity text-center">Customer</p>
+                      <h3 class="contrast">Johnson william</h3>
+                      <p class="indentity text-center contrast">Customer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+
+              <div class="carousel-item text-center">
+                <a href="" class="Testimonials-slide__img">
+                  <img src="./img/team1.jpeg" class="d-block w-100" alt="">
+                </a>
+                <div class="carousel-caption  d-md-block">
+                  <i class="fa-solid fa-quote-left icon py-3"></i>
+                  <p class="Testimonials-slide-header contrast">OMG! I cannot believe. It's Awesome <i class="fa-solid fa-quote-right"></i></p>
+                  <p class="contrast">My new site is so much faster and easier to work with than my old site. They are here to
+                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                    Pellen tesque libero ut justo, ultrices in ligula.
+                  </p>
+                  <div class="text-center mt-4">
+                    <div class="people-info align-self">
+                      <h3 class="contrast">Johnson william</h3>
+                      <p class="indentity text-center contrast">Customer</p>
                     </div>
                   </div>
                 </div>
@@ -669,20 +680,20 @@
     <footer class="py-5">
       <div class="container py-4">
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
             <div class="footer-logo mb-3">
               <h2><a class="navbar-brand" href="index.html">Diner</a></h2>
             </div>
             <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
               tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>
             <div class="main-social-footer mt-4">
-              <a href="#facebook" class="social"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#twitter" class="social"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#instagram" class="social"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#linkedin" class="social"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#facebook" class="social darktheme"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#twitter" class="social darktheme"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#instagram" class="social darktheme"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#linkedin" class="social darktheme"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
           </div>
-          <div class="col-2 footer-title">
+          <div class="col-12 col-md-2 mb-4 mb-md-0 footer-title">
             <h6>Usefull Links</h6>
             <ul>
               <li><a href="about.html">About Us</a></li>
@@ -692,7 +703,7 @@
               <li><a href="contact.html">Contact us</a></li>
             </ul>
           </div>
-          <div class="col-2 footer-title">
+          <div class="col-12 col-md-2 mb-4 mb-md-0 footer-title">
             <h6>More Info</h6>
             <ul>
               <li><a href="#history">History</a></li>
@@ -703,11 +714,11 @@
             </ul>
 
           </div>
-          <div class="col-4 footer-title">
+          <div class="col-12 col-md-4 mb-4 mb-md-0 footer-title">
             <h6>Subscribe to our Newsletter </h6>
             <p>Enter your email and receive the latest news, updates and special offers from us.</p>
             <form action="#" class="subscribe mt-4" method="post">
-              <input type="email" class="email" name="email" placeholder="Your Email Address" required="">
+              <input type="email" class="email darktheme" name="email" placeholder="Your Email Address" required="">
               <button class="btn btn-style btn-primary w-100 mt-3">Subscibe Now</button>
             </form>
           </div>
@@ -718,13 +729,15 @@
     <section class="copyright">
       <div class="container">
         <div class="row bottom-copies align-items-center">
-          <p class="col-8 copy-footer">© 2021 Diner. All rights reserved. Design by <a href="" target="_blank">
-              Myteam</a></p>
-  
-          <div class="col-4 footer-title">
-            <ul class="d-flex text-right">
+          <div class="col-lg-8">
+            <p class="copy-footer text-center text-lg-left">© 2021 Diner. All rights reserved. Design by
+              <a href="" target="_blank">Myteam</a>
+            </p>
+          </div>
+          <div class="col-lg-4 footer-title">
+            <ul class="d-flex flex-wrap text-lg-right">
               <li><a href="#careers"> Careers</a></li>
-              <li class="mx-5"><a href="#privacymy-lg-0 my-4">Privacy Policy</a></li>
+              <li class="mx-xl-5 mx-lg-3 mx-md-4"><a href="#privacymy-lg-0 my-4">Privacy Policy</a></li>
               <li><a href="contact.html">Contact us</a></li>
             </ul>
           </div>
@@ -733,11 +746,12 @@
       </div>
   
       <!-- move top -->
-      <a title="Go to top" class="backToTop cd-top text-replace js-cd-top text-center">
+      <a title="Go to top" class="backToTop cd-top text-replace js-cd-top text-center cd-top--is-visible cd-top--fade-out">
         <i class="fa-solid fa-arrow-up"></i>
       </a>
+      <script>
 
-
+      </script>
       <!-- <script>
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function () {
@@ -760,29 +774,57 @@
       </script> -->
       <!-- /move top -->
     </section>
+    <section class="sidebar">
+      <div class="pull-right toggle-right-sidebar">
+        <div class="p-4 d-block">
+          <i class="fa-solid fa-angles-right "></i>
+        </div>
+      </div>
+      <div class="sidebar__btn">
+        <a class="d-block mb-4 pt-3" href="#">
+          <i class="fa-solid fa-arrow-left"></i>
+          <p>Back</p>
+        </a>
+        <a class="d-block mb-4" href="#">
+          <i class="fa-solid fa-download"></i>
+          <p>Download</p>
+        </a>
+        <a class="d-block mt-4 pb-3 " href="#">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>Buy</p>
+        </a>
+      </div>
+    </section>
 
     <!-- Optional JavaScript -->
      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <script rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <!-- animation scroll wow cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- count up js -->
-    <script src="./js/countup.js"></script>
-
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+     <script rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     
+     <!-- animation scroll wow cdn -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     
+     <!-- count up js -->
+     <script src="./js/countup.js"></script>
+     
      <!-- back to top  -->
      <script src="./js/backToTop/js/main.js"></script>
      <script src="./js/backToTop/js/util.js"></script>
-
-    <!-- my js -->
+     
+     <!-- Magnific Popup -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+     <!-- <script src="magnific-popup/jquery.magnific-popup.js"></script> -->
+     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+     <!-- my js -->
     <script src="./js/main.js"></script>
+
+
+
   </body>
   
 </html>

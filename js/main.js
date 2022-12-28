@@ -46,3 +46,32 @@ function myCloseShow() {
 //   }
 // }
 
+// $('.pull-right').click
+$(".pull-right div").click(function(){
+  $(".sidebar").toggleClass('active');
+});
+
+
+// Magnific Popup
+$(document).ready(function () {
+  $("#popup-video").magnificPopup({
+    type: "inline",
+
+    fixedContentPos: false,
+    fixedBgPos: true,
+
+    overflowY: "auto",
+
+    closeBtnInside: true,
+    preloader: false,
+
+    midClick: true,
+    removalDelay: 300,
+    mainClass: "my-mfp-zoom-in"
+  });
+});
+
+// Dark theme
+document.getElementById("switchButton").onclick = function () {
+  document.getElementById("myBody").classList.toggle("dark");
+};

@@ -5,6 +5,7 @@
 		offsetOpacity = 1200, //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
 		scrollDuration = 700,
 		scrolling = false;
+		
 
 	if( backTop ) {
 		//update back to top visibility on scrolling
