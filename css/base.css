@@ -7,7 +7,7 @@
     --border-radius: 6px;
     --border-radius-full: 35px;
     --border-color: transparent;
-    --border-color-light: #eee;
+    --border-color-light: rgb(255 255 255 / 10%);
     --nav-color: #232121;
     --dropdown-color: #fff;
     --iframe-filter: grayscale(0%);
