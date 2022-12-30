@@ -944,10 +944,17 @@ footer p {
     visibility: visible;
   }
 
-
-@media only screen and (max-width: 1280px) {
+@media only screen and (min-width: 1440px) {
     .container {
-        max-width: 1140px;
+        max-width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+  
+@media only screen and (max-width: 1439.9px) {
+    .container {
+        max-width: 90%;
         margin-right: auto;
         margin-left: auto;
     }
@@ -955,7 +962,7 @@ footer p {
 
 @media only screen and (max-width: 1199.9px) {
     .container {
-        max-width: 960px;
+        max-width: 90%;
         margin-right: auto;
         margin-left: auto;
     }
@@ -972,13 +979,13 @@ footer p {
 
 }
 
-@media only screen and (max-width: 1080px) {
+/* @media only screen and (max-width: 1080px) {
 
-}
+} */
 
 @media only screen and (max-width: 991.9px) {
     .container {
-        max-width: 720px;
+        max-width: 90%;
     }
 
     .banner__info h3 {
@@ -1021,7 +1028,7 @@ footer p {
 
 @media only screen and (max-width: 766.99px) {
     .container {
-        max-width: 540px;
+        max-width: 90%;
         margin-right: auto;
         margin-left: auto;
     }
