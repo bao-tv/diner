@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <title>Diner</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+       <!-- animation -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+      <!-- font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- fontawesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- reset css -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- animation css -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+      <!-- Magnigic Popup -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+      
+      <!-- my style -->
+      <link rel="stylesheet" href="./css/base.css">
+      <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body id="myBody">
+    <!-- navbar-light -->
+    <!-- banner -->
+    <section class="banner">
+      <div class="container">
+        <nav class="navbar banner__header">
+          <a href="./index.html" class="navbar__brand">Diner</a>
+          <div class="banner__content">
+            <div class="banner__search">
+              <form class="form-inline position-relative  ">
+                <input class="form-control darktheme " type="search" placeholder="Search here.." aria-label="Search">
+                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                <div class="search__icon">
+                  <i class="fa-solid fa-magnifying-glass contrast"></i>
+                </div>
+              </form>
+            </div>
+            <!-- <a href=""></a> -->
+            <button class="btndark" id="switchButton" title="Click to switch theme">
+              <i class="fa-regular fa-moon mr-2"></i>
+              <i class="fa-regular fa-sun mr-2"></i>
+            </button>
+            <div class="banner__menu">
+              <button id="myBtnMenu" type="button">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="banner__info">
+          <h3 class="mt-4 pt-2">The Only Thing We Love More Than Food Is You!</h3>
+          <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quaerat sequi inventore repellat, rem veritatis?</p>
+          <a href="" class="btn btn-white mt-5 mr-2">
+            Read More
+            <i class="fa-solid fa-chevron-right ml-2"></i>
+          </a>
+        </div>
+
+        <div id="bannerMenu" class="banner_menu_overlay overlay">
+          <button id="bannerMenuClose" class="overlay__close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Services</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">404</a>
+            </li>
+            <li>
+              <a href="">Landing Page</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+            <li>
+              <a href="">Shot Codes</a>
+            </li>
+            <li>
+              <a href="">Email</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+
+    <section class="about py-5 darktheme">
+      <div class="container py-5">
+        <div class="row">
+          <div class="about-left col-lg-5">
+            <div class="title">
+              <h6 class="title-header">About Us</h6>
+              <h3 class="title-info mb-4 contrast">We found our creative space that is open for you.</h3>
+            </div>
+          </div>
+  
+          <div class="about-right col-lg-7 pl-lg-5">
+            <div class="container-content mt-3 ">
+              <p class="contrast">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor sit.</p>
+              <p class="mt-3 contrast">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog -->
+
+    <section class="agent-block">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-6 pt-lg-0 pt-5 ">
+            <div class="agent-block-img pt5"></div>
+          </div>
+          <div class="col-lg-6 px-4 py-3">
+            <div class="agent-block-info p-5">
+              <div class="title">
+                <h6 class="title-header">More than 3000 Restaurants</h6>
+                <h3 class="title-info mb-4">Book a table easly at the best price</h3>
+              </div>
+              <p class="my-3">
+                Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.
+              </p>
+              <div class="agent-block-sub mt-5">
+                <div class="agent-block-sub__item">
+                  <div class="icon mb-4">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                  </div>
+                  <a href="" class="agent-block-sub__link mb-3">Best Deals</a>
+                  <p class="mt-2">
+                    Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                  </p>
+                </div>
+
+                <div class="agent-block-sub__item">
+                  <div class="icon mb-4">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                  </div>
+                  <a href="" class="agent-block-sub__link mb-3">Best Deals</a>
+                  <p class="mt-2">
+                    Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+
+    <section class="Categories py-5 darktheme">
+      <div class="container py-5">
+        <div class="title text-center">
+          <h6 class="title-header">What's New</h6>
+          <h3 class="title-info mb-4 contrast">Popular Categories</h3>
+        </div>
+        <div class="Categories-content row">
+          <div class="col-lg-4 col-6 mt-lg-0 mt-4">
+            <div class="Categories-content__item overflow-hidden">
+              <a href="" class="Categories-content__img ">
+                <img src="./img/g1.jpeg" alt="" class="img-fluid">
+              </a>
+              <div class="Categories-content__info p-5">
+                <a href="">
+                  <h4>Vegetarian</h4>
+                </a>
+                <h6 class="mt-2">$350</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mt-lg-0 mt-4">
+            <div class="Categories-content__item overflow-hidden">
+              <a href="" class="Categories-content__img ">
+                <img src="./img/g1.jpeg" alt="" class="img-fluid">
+              </a>
+              <div class="Categories-content__info p-5">
+                <a href="">
+                  <h4>Vegetarian</h4>
+                </a>
+                <h6 class="mt-2">$350</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6 mt-lg-0 mt-4">
+            <div class="Categories-content__item overflow-hidden">
+              <a href="" class="Categories-content__img ">
+                <img src="./img/g1.jpeg" alt="" class="img-fluid">
+              </a>
+              <div class="Categories-content__info p-5">
+                <a href="">
+                  <h4>Vegetarian</h4>
+                </a>
+                <h6 class="mt-2">$350</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mt-4">
+            <div class="Categories-content__item overflow-hidden">
+              <a href="" class="Categories-content__img ">
+                <img src="./img/g1.jpeg" alt="" class="img-fluid">
+              </a>
+              <div class="Categories-content__info p-5">
+                <a href="">
+                  <h4>Vegetarian</h4>
+                </a>
+                <h6 class="mt-2">$350</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mt-4">
+            <div class="Categories-content__item overflow-hidden">
+              <a href="" class="Categories-content__img ">
+                <img src="./img/g1.jpeg" alt="" class="img-fluid">
+              </a>
+              <div class="Categories-content__info p-5">
+                <a href="">
+                  <h4>Vegetarian</h4>
+                </a>
+                <h6 class="mt-2">$350</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6 mt-4">
+            <div class="Categories-content__item overflow-hidden">
+              <a href="" class="Categories-content__img ">
+                <img src="./img/g1.jpeg" alt="" class="img-fluid">
+              </a>
+              <div class="Categories-content__info p-5">
+                <a href="">
+                  <h4>Vegetarian</h4>
+                </a>
+                <h6 class="mt-2">$350</h6>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="services py-5 darktheme">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-4 col-12">
+            <div class="services__item darktheme">
+              <div class="services__item-header">
+                <div class="services__icon mr-4">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="services__info">
+                  <p class="contrast">01</p>
+                  <h4>
+                    <a href="" class="contrast">Soup</a>
+                  </h4>
+                </div>
+              </div>
+            <p class="mt-3 contrast">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div class="services__item darktheme">
+              <div class="services__item-header">
+                <div class="services__icon mr-4">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="services__info">
+                  <p class="contrast">01</p>
+                  <h4><a href="" class="contrast">Soup</a></h4>
+                </div>
+              </div>
+            <p class="mt-3 contrast">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12 mt-lg-0 mt-4">
+            <div class="services__item darktheme">
+              <div class="services__item-header">
+                <div class="services__icon mr-4">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="services__info">
+                  <p class="contrast">01</p>
+                  <h4><a href="" class="contrast">Soup</a></h4>
+                </div>
+              </div>
+            <p class="mt-3 contrast">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12 mt-4">
+            <div class="services__item darktheme">
+              <div class="services__item-header">
+                <div class="services__icon mr-4">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="services__info">
+                  <p class="contrast">01</p>
+                  <h4><a href="" class="contrast">Soup</a></h4>
+                </div>
+              </div>
+            <p class="mt-3 contrast">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12 mt-4">
+            <div class="services__item darktheme">
+              <div class="services__item-header">
+                <div class="services__icon mr-4">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="services__info">
+                  <p class="contrast">01</p>
+                  <h4><a href="" class="contrast">Soup</a></h4>
+                </div>
+              </div>
+            <p class="mt-3 contrast">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12 mt-4">
+            <div class="services__item darktheme">
+              <div class="services__item-header">
+                <div class="services__icon mr-4">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="services__info">
+                  <p class="contrast">01</p>
+                  <h4><a href="" class="contrast">Soup</a></h4>
+                </div>
+              </div>
+            <p class="mt-3 contrast">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deliciousness -->
+    <section class="Deliciousness py-5 darktheme">
+     <div class="container pt-lg-2 pb-lg-4 py-4">
+      <div class="Deliciousness-top text-center py-5 m-auto">
+        <h3>Deliciousness jumping into the mouth.</h3>
+        <div class="Deliciousness_btn pb-5">
+          <a href="" class="btn btn-white mt-5 mr-4">
+            Read More 
+            <i class="fa-solid fa-chevron-right ml-2"></i>
+          </a>
+          <a href="" class="btn btn-primary mt-5">
+            Contact Us
+            <i class="fa-solid fa-chevron-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+      
+     </div>
+    </section>
+    <section class="number py-lg-0 py-5 darktheme">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="counter darktheme">
+              <i class="fa-regular fa-building"></i>
+              <div class="counter__number mt-3 contrast" data-counter-time="2000" data-counter-delay="10">15,100</div>
+              <p class="counter__text contrast">Branches</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="counter darktheme">
+              <i class="fa-regular fa-building"></i>
+              <div class="counter__number mt-3 contrast" data-counter-time="2000" data-counter-delay="10">15,100</div>
+              <p class="counter__text contrast">Branches</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="counter darktheme">
+              <i class="fa-regular fa-building"></i>
+              <div class="counter__number mt-3 contrast" data-counter-time="2000" data-counter-delay="10">15,100</div>
+              <p class="counter__text contrast">Branches</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="counter darktheme">
+              <i class="fa-regular fa-building"></i>
+              <div class="counter__number mt-3 contrast" data-counter-time="2000" data-counter-delay="10">15,100</div>
+              <p class="counter__text contrast">Happy Customers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- video -->
+    <section class="video darktheme">
+      <div class="container py-5">
+        <div class="video__info text-center">
+          <div class="play-view">
+            <a href="#small-dialog" id="popup-video">
+              <i class="fa-solid fa-play"></i>
+            </a>
+            <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+              <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blogs -->
+    <section class="blogs py-5 darktheme">
+      <div class="container py-5">
+        <div class="blogs__header">
+          <div class="title text-center">
+            <h6 class="title-header">Latest Posts</h6>
+            <h3 class="title-info mb-4 contrast">Blog Posts</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4 mt-5 ">
+            <div class="blogs__item">
+              <div class="blogs__item-header">
+                <a href="">
+                  <img src="./img/banner.jpeg" alt="">
+                </a>
+                <div class="blogs__item-info">
+                  <a href="" class="receipe">Reciepe</a>
+                  <span>
+                    <i class="fa-regular fa-clock"></i>
+                    10 Min Cook
+                  </span>
+                </div>
+              </div>
+              <div class="blogs_item-content">
+                <h3 class="contrast">The Best Cookie Recipes To Bake This Weekend
+                </h3>
+                <p class="contrast">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                  vitae sit.</p>
+                <div class="blogs__item-footer mt-3">
+                  <div class="blogs__item-footer-left">
+                    <a href="" class="blogs__item-footer-img">
+                      <img src="./img/team1.jpeg" alt="">
+                    </a>
+                    <p class="contrast">Rashed Kabir</p>
+                  </div>
+
+                  <a class="blogs__item-footer-right contrast" href="#">
+                    Read More
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mt-5">
+            <div class="blogs__item">
+              <div class="blogs__item-header">
+                <a href="">
+                  <img src="./img/banner.jpeg" alt="">
+                </a>
+                <div class="blogs__item-info">
+                  <a href="" class="receipe">Reciepe</a>
+                  <span>
+                    <i class="fa-regular fa-clock"></i>
+                    10 Min Cook
+                  </span>
+                </div>
+              </div>
+              <div class="blogs_item-content">
+                <h3 class="contrast">The Best Cookie Recipes To Bake This Weekend
+                </h3>
+                <p class="contrast">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                  vitae sit.</p>
+                <div class="blogs__item-footer mt-3">
+                  <div class="blogs__item-footer-left">
+                    <a href="" class="blogs__item-footer-img">
+                      <img src="./img/team1.jpeg" alt="">
+                    </a>
+                    <p class="contrast">Rashed Kabir</p>
+                  </div>
+
+                  <a class="blogs__item-footer-right contrast" href="#">
+                    Read More
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mt-5">
+            <div class="blogs__item">
+              <div class="blogs__item-header">
+                <a href="">
+                  <img src="./img/banner.jpeg" alt="">
+                </a>
+                <div class="blogs__item-info">
+                  <a href="" class="receipe">Reciepe</a>
+                  <span>
+                    <i class="fa-regular fa-clock"></i>
+                    10 Min Cook
+                  </span>
+                </div>
+              </div>
+              <div class="blogs_item-content">
+                <h3 class="contrast">The Best Cookie Recipes To Bake This Weekend
+                </h3>
+                <p class="contrast">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                  vitae sit.</p>
+                <div class="blogs__item-footer mt-3">
+                  <div class="blogs__item-footer-left">
+                    <a href="" class="blogs__item-footer-img">
+                      <img src="./img/team1.jpeg" alt="">
+                    </a>
+                    <p class="contrast">Rashed Kabir</p>
+                  </div>
+
+                  <a class="blogs__item-footer-right contrast" href="#">
+                    Read More
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="Testimonials py-5 darktheme">
+      <div class="container py-5">
+        <div class="Testimonials__header">
+          <div class="title text-center">
+            <h6 class="title-header">Testimonials</h6>
+            <h3 class="title-info mb-5 contrast">What People Say</h3>
+          </div>
+          
+        </div>
+        <div class="testimonial-content">
+          <div id="Testimonials" class="carousel slide" data-ride="carousel">
+            
+            <div class="carousel-inner py-2 mb-4">
+              
+              <div class="carousel-item text-center active">
+                <a href="" class="Testimonials-slide__img">
+                  <img src="./img/team1.jpeg" class="d-block w-100" alt="">
+                </a>
+                <div class="carousel-caption  d-md-block">
+                  <i class="fa-solid fa-quote-left icon py-3"></i>
+                  <p class="Testimonials-slide-header contrast">OMG! I cannot believe. It's Awesome <i class="fa-solid fa-quote-right"></i></p>
+                  <p class="contrast">My new site is so much faster and easier to work with than my old site. They are here to
+                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                    Pellen tesque libero ut justo, ultrices in ligula.
+                  </p>
+                  <div class="text-center mt-4">
+                    <div class="people-info align-self">
+                      <h3 class="contrast">Johnson william</h3>
+                      <p class="indentity text-center contrast">Customer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="carousel-item text-center">
+                <a href="" class="Testimonials-slide__img">
+                  <img src="./img/team1.jpeg" class="d-block w-100" alt="">
+                </a>
+                <div class="carousel-caption  d-md-block">
+                  <i class="fa-solid fa-quote-left icon py-3"></i>
+                  <p class="Testimonials-slide-header contrast">OMG! I cannot believe. It's Awesome <i class="fa-solid fa-quote-right"></i></p>
+                  <p class="contrast">My new site is so much faster and easier to work with than my old site. They are here to
+                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                    Pellen tesque libero ut justo, ultrices in ligula.
+                  </p>
+                  <div class="text-center mt-4">
+                    <div class="people-info align-self">
+                      <h3 class="contrast">Johnson william</h3>
+                      <p class="indentity text-center contrast">Customer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+
+              <div class="carousel-item text-center">
+                <a href="" class="Testimonials-slide__img">
+                  <img src="./img/team1.jpeg" class="d-block w-100" alt="">
+                </a>
+                <div class="carousel-caption  d-md-block">
+                  <i class="fa-solid fa-quote-left icon py-3"></i>
+                  <p class="Testimonials-slide-header contrast">OMG! I cannot believe. It's Awesome <i class="fa-solid fa-quote-right"></i></p>
+                  <p class="contrast">My new site is so much faster and easier to work with than my old site. They are here to
+                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                    Pellen tesque libero ut justo, ultrices in ligula.
+                  </p>
+                  <div class="text-center mt-4">
+                    <div class="people-info align-self">
+                      <h3 class="contrast">Johnson william</h3>
+                      <p class="indentity text-center contrast">Customer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+
+              <div class="carousel-item text-center">
+                <a href="" class="Testimonials-slide__img">
+                  <img src="./img/team1.jpeg" class="d-block w-100" alt="">
+                </a>
+                <div class="carousel-caption  d-md-block">
+                  <i class="fa-solid fa-quote-left icon py-3"></i>
+                  <p class="Testimonials-slide-header contrast">OMG! I cannot believe. It's Awesome <i class="fa-solid fa-quote-right"></i></p>
+                  <p class="contrast">My new site is so much faster and easier to work with than my old site. They are here to
+                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                    Pellen tesque libero ut justo, ultrices in ligula.
+                  </p>
+                  <div class="text-center mt-4">
+                    <div class="people-info align-self">
+                      <h3 class="contrast">Johnson william</h3>
+                      <p class="indentity text-center contrast">Customer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+            
+            <!-- <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button> -->
+          </div>
+          <ol class="carousel-indicators">
+            <li data-target="#Testimonials" data-slide-to="0" class="active"></li>
+            <li data-target="#Testimonials" data-slide-to="1"></li>
+            <li data-target="#Testimonials" data-slide-to="2"></li>
+            <li data-target="#Testimonials" data-slide-to="3"></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    
+    <!-- footer -->
+    <footer class="py-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <div class="footer-logo mb-3">
+              <h2><a class="navbar-brand" href="index.html">Diner</a></h2>
+            </div>
+            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+              tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>
+            <div class="main-social-footer mt-4">
+              <a href="#facebook" class="social darktheme"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#twitter" class="social darktheme"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#instagram" class="social darktheme"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#linkedin" class="social darktheme"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-2 mb-4 mb-md-0 footer-title">
+            <h6>Usefull Links</h6>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="blog.html"> Blog posts</a></li>
+              <li><a href="#careers"> Careers</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2 mb-4 mb-md-0 footer-title">
+            <h6>More Info</h6>
+            <ul>
+              <li><a href="#history">History</a></li>
+              <li><a href="#vision">Vision &amp; Values</a></li>
+              <li><a href="#award">Awards</a></li>
+              <li><a href="#media"> Media</a></li>
+              <li><a href="#support"> Support</a></li>
+            </ul>
+
+          </div>
+          <div class="col-12 col-md-4 mb-4 mb-md-0 footer-title">
+            <h6>Subscribe to our Newsletter </h6>
+            <p>Enter your email and receive the latest news, updates and special offers from us.</p>
+            <form action="#" class="subscribe mt-4" method="post">
+              <input type="email" class="email darktheme" name="email" placeholder="Your Email Address" required="">
+              <button class="btn btn-style btn-primary w-100 mt-3">Subscibe Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="copyright">
+      <div class="container">
+        <div class="row bottom-copies align-items-center">
+          <div class="col-lg-8">
+            <p class="copy-footer text-center text-lg-left">© 2021 Diner. All rights reserved. Design by
+              <a href="" target="_blank">Myteam</a>
+            </p>
+          </div>
+          <div class="col-lg-4 footer-title">
+            <ul class="d-flex flex-wrap text-lg-right justify-content-around">
+              <li><a href="#careers"> Careers</a></li>
+              <li class="mx-xl-3 mx-lg-2 mx-md-4"><a href="#privacymy-lg-0 my-4">Privacy Policy</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+  
+        </div>
+      </div>
+  
+      <!-- move top -->
+      <a title="Go to top" class="backToTop cd-top text-replace js-cd-top text-center cd-top--is-visible cd-top--fade-out">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+      <script>
+
+      </script>
+      <!-- <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction()
+        };
+  
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+          } else {
+            document.getElementById("movetop").style.display = "none";
+          }
+        }
+  
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script> -->
+      <!-- /move top -->
+    </section>
+    <section class="sidebar">
+      <div class="pull-right toggle-right-sidebar">
+        <div class="p-4 d-block">
+          <i class="fa-solid fa-angles-right "></i>
+        </div>
+      </div>
+      <div class="sidebar__btn">
+        <a class="d-block mb-4 pt-3" href="#">
+          <i class="fa-solid fa-arrow-left"></i>
+          <p>Back</p>
+        </a>
+        <a class="d-block mb-4" href="#">
+          <i class="fa-solid fa-download"></i>
+          <p>Download</p>
+        </a>
+        <a class="d-block mt-4 pb-3 " href="#">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>Buy</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+     <script rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     
+     <!-- animation scroll wow cdn -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     
+     <!-- count up js -->
+     <script src="./js/countup.js"></script>
+     
+     <!-- back to top  -->
+     <script src="./js/backToTop/js/main.js"></script>
+     <script src="./js/backToTop/js/util.js"></script>
+     
+     <!-- Magnific Popup -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+     <!-- <script src="magnific-popup/jquery.magnific-popup.js"></script> -->
+     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+     <!-- my js -->
+    <script src="./js/main.js"></script>
+
+
+
+  </body>
+  
+</html>
