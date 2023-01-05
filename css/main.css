@@ -135,7 +135,7 @@ button#myBtnMenu {
     opacity: 0;
     /* z-index: -9; */
     transform: scale(0.9);
-    transition: all .5s;
+    transition: all .4s;
 }
 
 .banner .show {
